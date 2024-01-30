@@ -1,0 +1,113 @@
+:root {
+    --header: #26282B;
+    --background: #353941;
+    --active-background: #494b52;
+    --active-link-color: #7f9de1;
+    --text-color: white;
+    --link-color: #5F85DB;
+    --emojibase: #80E961, #00B3FF;
+}
+
+body {
+    background: var(--background);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, b, th, td {
+    color: var(--text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.visible-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+header {
+    background: var(--header);
+    width: 100%;
+    padding: 1px 0px 0px 0px;
+    display: inline-block;
+}
+
+.header-buttons {
+    background-color: var(--background);
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 1.3em 1em 0px 0px;
+}
+
+.active-background {
+    background: var(--active-background);
+}
+
+.active-link-color {
+    color: var(--active-link-color);
+}
+
+.emojibase {
+    float: left;
+    margin-left: 0.7em;
+}
+
+emojibase{
+    background: linear-gradient(90deg, var(--emojibase));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+}
+
+emojibase:hover {
+    opacity: 70%;
+    transition: ease-out 0.25s;
+}
+
+th, td {
+    background: var(--header);
+    padding: 1em;
+    text-align: left;
+}
+
+.table-topleft {
+    border-radius: 1em 0px 0px 0px;
+}
+
+.table-topright {
+    border-radius: 0px 1em 0px 0px;
+}
+
+.table-bottom  {
+    border-radius: 0px 0px 1em 1em;
+}
+
+.emoji-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: "list main-emoji main-emoji main-emoji main";
+}
+
+.emojiList {
+    grid-area: list;
+    margin: 1em 2em 1em 2em;
+}
+
+main-emoji {
+    grid-area: main-emoji;
+    background: var(--header);
+    margin-top: 1em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 1em;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --header: #e1e1e1;
+        --background: #f6f6f6;
+        --text-color: black;
+    }
+  }

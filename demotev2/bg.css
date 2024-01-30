@@ -1,0 +1,80 @@
+html {
+    --bg: rgb(0, 204, 255) -1.1%, rgb(0, 221, 61) 100.7%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to right, var(--bg));
+    background-size: 300%;
+    animation: moving-background 30s infinite alternate;
+}
+
+.navbar {
+    display: flex;
+    background: rgba(255, 255, 255, 0.752);
+    padding: 0px 0px 0px 30px;
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.links {
+    position: right;
+    width: 100%;
+    text-align: right;
+    margin: 30px 10px 0px 0px;
+}
+
+.navbutton {
+    padding: 10px 10px 10px 10px;
+    margin: 7px;
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+
+.intro {
+    grid-area: intro;
+    text-align: center;
+    margin: 350px 0px 350px 0px;
+}
+
+
+.intro-hiimmelln {
+    margin: 0;
+    padding: 0;
+}
+
+.projects {
+    background: white;
+}
+
+
+.projectsList {
+    background: rgba(128, 128, 128, 0.707);
+    margin: 10% 35% 5% 35%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.featureItem {
+    background: rgba(166, 155, 155, 0.578);
+    margin: 50px 30px 0px 30px;
+    padding: 10px 10px 100px 20px;
+    border-radius: 20px;
+}
+
+@keyframes moving-background {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
