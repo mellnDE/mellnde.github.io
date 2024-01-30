@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Discord;
+    src: url(./assets/Discord.otf);
+}
+
+body {
+    background-color: rgb(41, 42, 43);
+    color: rgb(255, 255, 255)
+}
+
+h1 {
+    font-family: "Discord";
+}
+
+.überschrift {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 10px;
+    float: left;
+    font-family: "Discord";
+}
+
+#tab {
+    float: right;
+    margin-top: 25px;
+}
+
+.invite {
+    margin-right: 25px;
+}
+
+.cmd {
+    margin-right: 50px;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.redredsky {
+    color:rgb(214, 60, 21)
+}
+
+.what {
+    margin-left: 130px;
+}
+
+h1.what {
+    margin-top: 100px;
+    margin-left: 150px;
+    font-family: "Discord";
+}
+
+#logo2 {
+    float: right;
+    margin-top: 40px;
+    margin-right: 270px;
+}
+
+.feature {
+    margin-left: 790px;
+}
+h1.feature {
+    margin-left: 810px;
+    margin-top: 300px;
+    font-family: "Discord";
+}
+
+#func {
+    float: left;
+    margin-left: 230px;
+    margin-top: -150px;
+}
+
+.center {
+    margin-left: 35%;
+}
+
+.discordfont {
+    font-family: "Discord";
+}
+
+#bg2 {
+    background-color: rgb(86,100,242,255);
+    margin-top: 16%;
+    height: 600px;
+    margin-right: -1%;
+}
+
+#trust {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.os2 {
+    margin-left: 5%;
+}
+
+.dev {
+    text-align: right;
+    margin-right: 5%;
+}
+
+a:link:(.no) {
+    color: rgb(86,100,242,255);
+}
+a:visited:not(.no) {
+    color: rgb(86,100,242,255);
+}
+
+a:hover:not(.redredsky, .os2) {
+color:rgb(59, 73, 218)
+}
