@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Angebotsrechner | Keno Kahle</title>
+    <link rel="icon" href="/assets/favicon.jpg">
+</head>
+<body>
+    <a href="https://instagram.com/malermeister_kenokahle"><img src="/assets/logo.jpg" class="keno-kahle-logo"></a>
+
+<div class="flex-input">     
+    <div class="input-item">
+    <label for="wandflaeche"><b>Wandfläche in m²</b></label><br>
+    <input type="number" id="wandflaeche" class="eingabefeld" name="wandflaeche" min="0"><br><br>
+
+    <label for="deckenflaeche"><b>Deckenfläche in m²</b></label><br>
+    <input type="number" id="deckenflaeche" class="eingabefeld" name="deckenflaeche" min="0"><br><br>
+
+    <label for="tueren"><b>Anzahl Türen</b></label><br>
+    <input type="number" id="tuerenanzahl" class="eingabefeld" name="tueren" min="0"><br><br>
+
+    <label for="fenster"><b>Anzahl Fenster</b></label><br>
+    <input type="number" id="fensteranzahl" class="eingabefeld" name="fenster" min="0"><br><br>
+
+    <label for="gesamtpreis"><b>Gesamtpreis</b></label>
+    <b><p id="gesamtpreis">‎</p></b>
+
+    </div>
+</div>
+
+<div class="flex-buttons">
+    <div class="button-field-item">
+        <div class="berechnen-button" onclick="berechnen()"><b>Berechnen</b></div>
+        <div class="delete-button" onclick="löschen()"><b>Löschen</b></div>
+    </div>
+</div>
+
+</body>
+</html>

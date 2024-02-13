@@ -1,0 +1,71 @@
+body {
+    margin: auto;
+    background-image: url("/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.eingabefeld {
+    border: 1px solid gray;
+    border-radius: 0.5em;
+}
+
+.keno-kahle-logo {
+    height: 140px;
+    width: 210px;
+    margin-bottom: 4em;
+}
+
+.flex-input, .flex-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.input-item, .button-field-item {
+    padding: 2em 3em 1em 3em;
+    background-color: rgba(128, 128, 128, 0.2);
+    width: auto;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+}
+
+.button-field-item {
+    padding: 1em 1em 1em 1em;
+    display: grid;
+    grid-template-areas: "berechnen löschen";
+    gap: 1em;
+}
+
+#gesamtpreis {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.2em;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.berechnen-button {
+    background-color: greenyellow;
+    padding: 1em;
+    grid-area: "berechnen";
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.berechnen-button:hover {
+    background-color: rgb(163, 238, 50);
+}
+
+.delete-button {
+    background-color: rgb(255, 69, 69);
+    padding: 1em;
+    grid-area: "löschen";
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(241, 63, 63);
+}
